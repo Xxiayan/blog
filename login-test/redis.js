@@ -27,7 +27,7 @@ redisClient.on('error', err => {
 })
 
 function set(key,val){
-    //注意，key val 必须是字符串，如果val是object形式要将其转换成JSON字符串格式
+    //注意，key val 必须是字符串，如果val是object形式要将其转换成JSON字符串格式 
     if(typeof val === 'object'){
         val = JSON.stringify(val)
     }
